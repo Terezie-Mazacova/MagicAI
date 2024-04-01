@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    
+    <title>MagiAI</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!--Header-->
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <a href="#">
+                        <p>magiAI</p>
+                    </a> 
+                </div>
+                <nav class="header-navigation">
+                    <div class="header-items">
+                        <a href="#">
+                            <p>Home</p>
+                        </a>
+                    </div>
+                    <div class="header-items">
+                        <a href="#">
+                            <p>Features</p>
+                        </a>
+                    </div>
+                    <div class="header-items">
+                        <a href="#">
+                            <p>How it works</p>
+                        </a>
+                    </div>
+                    <div class="header-items">
+                        <a href="#">
+                            <p>Testimonials</p>
+                        </a>
+                    </div>
+                    <div class="header-items">
+                        <a href="#">
+                            <p>Pricing</p>
+                        </a>
+                    </div>
+                    <div class="header-items">
+                        <a href="#">
+                            <p>FAQ</p>
+                        </a>
+                    </div>
+                </nav>
+
+                <div class="nav-btn">
+                    <div class="nav-btn btn-sign-up">
+                        <button>
+                            <span>Sign in</span>
+                        </button>
+                    </div>
+                    <div class="nav-btn btn-join">
+                        <button>
+                            <span>Join Hub</span>
+                        </button>
+                    </div>
+                </div>
+            
+            <!--Hamburger button-->
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+            </div>
+
+            <!--Hamburger menu-->
+            <nav class="mobile-nav">
+                <a href="#"><p>Home</p></a>
+                <a href="#"><p>Features</p></a>
+                <a href="#"><p>How it works</p></a>
+                <a href="#"><p>Testimonials</p></a>
+                <a href="#"><p>Pricing</p></a>
+                <a href="#"><p>FAQ</p></a>
+                <button class="mobile-nav-btn mobile-btn">
+                    <span>Sign in</span>
+                </button>
+                <button class="mobile-nav-btn">
+                    <span>Join Hub</span>
+                </button>
+            </nav>
+            
+
+            <!--hero-->
+            <div class="hero">
+                <div class="hero-text">
+                    <div class="hero-title">
+                        <h1>Ultimate AI Generator</h1>
+                    </div>
+                    <div class="hero-paragraph">
+                        <p>Platforma vše v jednom pro generování obsahu s umělou inteligencí a vydělávání peněz během několika minut.</p>
+                    </div>
+                </div>
+                <div class="hero-btn">
+                    <button>
+                        <i class="bi bi-lightning-fill"></i>
+                        <span>Try MagicAI</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--The Future-->
+        <section>
+            <div class="section-the-future">
+                <div>
+                    <h2>The future of AI</h2>
+                </div>
+                <div class="the-future-list">
+                    <div class="list">
+                        <div>
+                            <i class="bi bi-bookmark"></i>
+                        </div>
+                        <div class="the-future-title">
+                            <h3>AI Generator</h3>
+                            <p>Generate text, image, code, chat and even more.</p>
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <div>
+                            <i class="bi bi-bookmark"></i>
+                        </div>
+                        <div class="the-future-title">
+                            <h3>Multi-Lingual</h3>
+                            <p>Ability to understand and generate content in different languages.</p>
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <div>
+                            <i class="bi bi-bookmark"></i>
+                        </div>
+                        <div class="the-future-title">
+                            <h3>Advanced Dashboard</h3>
+                            <p>Access to valuable user insight, analytics and activity.</p>
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <div>
+                            <i class="bi bi-bookmark"></i>
+                        </div>
+                        <div class="the-future-title">
+                            <h3>Custom Templates</h3>
+                            <p>Add unlimited number of custom prompts for your customers.</p>
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <div>
+                            <i class="bi bi-bookmark"></i>
+                        </div>
+                        <div class="the-future-title">
+                            <h3>Payment Gateways</h3>
+                            <p>Securely process credit card, debit card, or other methods.</p>
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <div>
+                            <i class="bi bi-bookmark"></i>
+                        </div>
+                        <div class="the-future-title">
+                            <h3>Support Platform</h3>
+                            <p>Access and manage your support tickets from your dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Intelligent Writing-->
+        <section>
+            <div class="section-tabs js-tabs">
+                <ul class="tabs">
+                    <li data-tab-target="#text" class="active tab">AI Text Generator</li>
+                    <li data-tab-target="#image" class="tab">AI Image Generator</li>
+                    <li data-tab-target="#code" class="tab">AI Code Generator</li>
+                    <li data-tab-target="#chat" class="tab">AI Chat Bot</li>
+                    <li data-tab-target="#speech" class="tab">AI Speech To Text</li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="text" data-tab-content class="active">
+                        <div class="tab-title-list">
+                            <div class="tab-title">
+                                <h3>Intelligent Writing Assistant</h3>
+                                <p>Writer is designed to help you <strong class="highlight-text">generate high-quality texts instantly,</strong> without breaking a sweat. With our intuitive interface and powerful features, you can easily edit, export or publish your AI-generated result.</p>
+                            </div>
+                            <figure class="tab-img">
+                                <img src="/img/pexels-google-deepmind-18069239.jpg" alt="AI Text Generator">
+                                <figcaption>
+                                    <p class="figcaption-strong-text"><strong>Generate, edit, export,</strong></p>
+                                    <p class="figcaption-other-text">Powered by OpenAI.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                    <div id="image" data-tab-content>
+                        <div class="tab-title-list">
+                            <div class="tab-title">
+                                <h3>Intelligent Writing Assistant</h3>
+                                <p>Writer is designed to help you <strong class="highlight-text">generate high-quality texts instantly,</strong> without breaking a sweat. With our intuitive interface and powerful features, you can easily edit, export or publish your AI-generated result.</p>
+                            </div>
+                            <figure class="tab-img tab-dark-orange">
+                                <img src="/img/AI-image.jpg" alt="AI Image Generator">
+                                <figcaption>
+                                    <p class="figcaption-strong-text"><strong>Generate, edit, export,</strong></p>
+                                    <p class="figcaption-other-text">Powered by OpenAI.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div id="code" data-tab-content>
+                        <div class="tab-title-list">
+                            <div class="tab-title">
+                                <h3>Intelligent Writing Assistant</h3>
+                                <p>Writer is designed to help you <strong class="highlight-text">generate high-quality texts instantly,</strong> without breaking a sweat. With our intuitive interface and powerful features, you can easily edit, export or publish your AI-generated result.</p>
+                            </div>
+                            <figure class="tab-img tab-light-blue">
+                                <img src="/img/ai-code.jpg" alt="AI Code Generator">
+                                <figcaption>
+                                    <p class="figcaption-strong-text"><strong>Generate, edit, export,</strong></p>
+                                    <p class="figcaption-other-text">Powered by OpenAI.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div id="chat" data-tab-content>
+                        <div class="tab-title-list">
+                            <div class="tab-title">
+                                <h3>Intelligent Writing Assistant</h3>
+                                <p>Writer is designed to help you <strong class="highlight-text">generate high-quality texts instantly,</strong> without breaking a sweat. With our intuitive interface and powerful features, you can easily edit, export or publish your AI-generated result.</p>
+                            </div>
+                            <figure class="tab-img tab-dark-blue">
+                                <img src="/img/ai-chat.jpg" alt="AI Chat Generator">
+                                <figcaption>
+                                    <p class="figcaption-strong-text"><strong>Generate, edit, export,</strong></p>
+                                    <p class="figcaption-other-text">Powered by OpenAI.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div id="speech" data-tab-content>
+                        <div class="tab-title-list">
+                            <div class="tab-title">
+                                <h3>Intelligent Writing Assistant</h3>
+                                <p>Writer is designed to help you <strong class="highlight-text">generate high-quality texts instantly,</strong> without breaking a sweat. With our intuitive interface and powerful features, you can easily edit, export or publish your AI-generated result.</p>
+                            </div>
+                            <figure class="tab-img tab-light-green">
+                                <img src="/img/ai-speech.jpg   " alt="AI Speech Generator">
+                                <figcaption>
+                                    <p class="figcaption-strong-text"><strong>Generate, edit, export,</strong></p>
+                                    <p class="figcaption-other-text">Powered by OpenAI.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Cards-->
+        <section>
+            <div class="cards">
+                <div class="card color-orange">
+                    <i class="bi bi-dot"></i>
+                    <h4>Digital Agencies</h4>
+                </div>
+                <div class="card color-dark-blue">
+                    <i class="bi bi-dot"></i>
+                    <h4>Copywriters</h4>
+                </div>
+                <div class="card color-purple">
+                    <i class="bi bi-dot"></i>
+                    <h4>Product Designers</h4>
+                </div>
+                <div class="card color-green">
+                    <i class="bi bi-dot"></i>
+                    <h4>Digital marketers</h4>
+                </div>
+                <div class="card color-light-blue">
+                    <i class="bi bi-dot"></i>
+                    <h4>Enterpreneurs</h4>
+                </div>
+                <div class="card color-light-orange">
+                    <i class="bi bi-dot"></i>
+                    <h4>Developers</h4>
+                </div>
+            </div>
+        </section>
+
+        <!--Custom Templates-->
+        <section>
+            <div class="section-custom-templates">
+                <div class="filter-nav">
+                    <h2>Custom Templates</h2>
+                    <ul class="filtermenu">
+                        <li data-filter="all">All</li>
+                        <li data-filter="blog">Blog</li>
+                        <li data-filter="e-commerce">E-commerce</li>
+                        <li data-filter="development">Development</li>
+                        <li data-filter="advertisement">Advertisement</li>
+                        <li data-filter="social-media">Social Media</li>
+                        <li data-filter="voiceover">Voiceover</li>
+                    </ul>
+                </div>
+                <div class="filter-gallery-container">
+                    <div class="post blog">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Blog</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post blog">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Blog</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post blog">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Blog</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post e-commerce">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product E-commerce</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post e-commerce">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product E-commerce</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post e-commerce">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product E-commerce</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post development">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Development</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post development">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Development</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post development">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Development</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post advertisement">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Advertisement</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post advertisement">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Advertisement</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post advertisement">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Advertisement</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post social-media">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Social Media</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post social-media">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Social Media</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post social-media">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Social Media</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post voiceover">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Voiceover</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post voiceover">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Voicerover</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post voiceover">
+                        <div class="post-wrapper">
+                            <div class="post-card">
+                                <i class="bi bi-file-earmark-ppt-fill"></i>
+                                <div class="post-title">
+                                    <h3>Product Voiceover</h3>
+                                    <p>Easily create compelling product descriptions that sell. Increase conversions and boost sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="show-more">+ Show more</div>
+            </div>
+        </section>
+
+        <!--Magic Tools-->
+        <section>
+            <div class="section-magic-tools">
+                <div class="magic-tools-title">
+                    <h2>Magic Tools</h2>
+                    <p>MagicAI has all the tools you need to create and manage your SaaS platform.</p>
+                </div>
+                <div class="magic-tools">
+                    <div class="magic-tools-list">
+                        <div class="magic-tools-img">
+                            <img src="/img/pexels-tara-winstead-8386440.jpg">
+                        </div>
+                        <div class="magic-tools-items">
+                            <h4>Advanced Dashboard</h4>
+                            <p>Track a wide range of data points, including user traffic and sales.</p>
+                        </div>
+                    </div>
+                    <div class="magic-tools-list">
+                        <div class="magic-tools-img">
+                            <img src="/img/pexels-tara-winstead-8386440.jpg">
+                        </div>
+                        <div class="magic-tools-items">
+                            <h4>Payment Gateways</h4>
+                            <p>Securely process credit card or other electronic payment methods.</p>
+                        </div>
+                    </div>
+                    <div class="magic-tools-list">
+                        <div class="magic-tools-img">
+                            <img src="/img/pexels-tara-winstead-8386440.jpg">
+                        </div>
+                        <div class="magic-tools-items">
+                            <h4>Multilingual</h4>
+                            <p>Ability to understand and generate content in different languages.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="magic-tools-list">
+                        <div class="magic-tools-img">
+                            <img src="/img/pexels-tara-winstead-8386440.jpg">
+                        </div>
+                        <div class="magic-tools-items">
+                            <h4>Affiliate System</h4>
+                            <p>Ability to invite friends, and earn commission from their first purchase.</p>
+                        </div>
+                    </div>
+                    <div class="magic-tools-list">
+                        <div class="magic-tools-img">
+                            <img src="/img/pexels-tara-winstead-8386440.jpg">
+                        </div>
+                        <div class="magic-tools-items">
+                            <h4>Easy Export</h4>
+                            <p>Export generated content as plain text, PDF, Word or HTML easily.</p>
+                        </div>
+                    </div>
+                    <div class="magic-tools-list">
+                        <div class="magic-tools-img">
+                            <img src="/img/pexels-tara-winstead-8386440.jpg">
+                        </div>
+                        <div class="magic-tools-items">
+                            <h4>Support Platform</h4>
+                            <p>Access and mage support tickets from your dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--So, how does it work?-->
+        <section>
+            <div class="section-work">
+                <div class="work-container-blur"></div>
+                <div class="section-work-title">
+                    <h2>So, how does it work?</h2>
+                </div>
+                <div class="work-list">
+                    <div class="work-items">
+                        <div class="work-items-title">
+                            <div class="work-container-title">
+                                <h4>1</h4>
+                            </div>
+                        </div>
+                        <p>Simply explain what your content is about and adjust settings according to your needs.</p>
+                    </div>
+                    <div class="work-items">
+                        <div class="work-items-title">
+                            <div class="work-container-title">
+                                <h4>2</h4>
+                            </div>
+                        </div>
+                        <p>Simply input some basic information or keywords about your brand or product, and let our AI algorithms do the rest.</p>
+                    </div>
+                    <div class="work-items">
+                        <div class="work-items-title">
+                            <div class="work-container-title">
+                                <h4>3</h4>
+                            </div>
+                        </div>
+                        <p>View, edit or export your result with a few clicks. And you’re done!</p>
+                    </div>
+                </div>
+                <div class="work-container-blur-bottom"></div>
+            </div>
+        </section>
+
+        <!--Trusted by millions-->
+        <section class="splide" aria-labelledby="carousel-heading">
+            <h2>Trusted by millions</h2>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="splide-item">
+                            <div class="splide-img">
+                                <img src="/img/splide01.jpg">
+                            </div>
+                            <div class="splide-caption">
+                                <h3 class="splide-name">Jason Statham</h3>
+                                <p class="splide-job">Graphic Designer</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur corporis, quas dolore unde, possimus iure aut inventore quia recusandae neque exercitationem deserunt accusamus tempora reiciendis ratione! Nisi, illo reiciendis.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide-item">
+                            <div class="splide-img">
+                                <img src="/img/splide02.jpg">
+                            </div>
+                            <div class="splide-caption">
+                                <h3 class="splide-name">Sylvester Stallone</h3>
+                                <p class="splide-job">UI/UX Designer</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur corporis, quas dolore unde, possimus iure aut inventore quia recusandae neque exercitationem deserunt accusamus tempora reiciendis ratione! Nisi, illo reiciendis.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide-item">
+                            <div class="splide-img">
+                                <img src="/img/splide03.jpg">
+                            </div>
+                            <div class="splide-caption">
+                                <h3 class="splide-name">Matthew Perry</h3>
+                                <p class="splide-job">Coder</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur corporis, quas dolore unde, possimus iure aut inventore quia recusandae neque exercitationem deserunt accusamus tempora reiciendis ratione! Nisi, illo reiciendis.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Flexible Pricing-->
+        <section>
+            <div class="section-third-tabs js-tabs">
+                <div class="third-tabs-wrapper">
+                    <h2>Flexible Pricing</h2>
+                    <ul class="third-tabs">
+                        <li data-tab-target="#monthly" class="active tab-list">Monthly Billing</li>
+                        <li data-tab-target="#annual" class="tab-list">
+                            <div class="third-tab-content">Annual Billing</div>
+                            <div class="third-tab-content-discount">Save 30 %</div>
+                        </li>
+                        <li data-tab-target="#token" class="tab-list">Token Packs</li>
+                    </ul>
+                </div>
+                
+
+                <div class="third-tabs-content">
+                    <div id="monthly" data-tab-content class="active">
+                        <div class="tab-title-items">
+                            <div class="third-tab-title">
+                                <h3>9.00</h3>
+                                <p>per month</p>
+                                <button>Select Premium</button>
+                            </div>
+                            <div class="third-tab-title">
+                                <h3>8.00</h3>
+                                <p>per month</p>
+                                <button>Select Premium</button>
+                            </div>
+                            <div class="third-tab-title">
+                                <h3>7.00</h3>
+                                <p>per month</p>
+                                <button>Select Premium</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="annual" data-tab-content>
+                        <div class="tab-title-items">
+                            <div class="third-tab-title">
+                                <h3>6.00</h3>
+                                <p>per month</p>
+                                <button>Select Premium</button>
+                            </div>
+                            <div class="third-tab-title">
+                                <h3>5.00</h3>
+                                <p>per month</p>
+                                <button>Select Premium</button>
+                            </div>
+                            <div class="third-tab-title">
+                                <h3>4.00</h3>
+                                <p>per month</p>
+                                <button>Select Premium</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="token" data-tab-content>
+                        <div class="tab-title-items">
+                            <div class="third-tab-title">
+                                <h3>3.00</h3>
+                                <p>per month</p>
+                                <button>Select Premium</button>
+                            </div>
+                            <div class="third-tab-title">
+                                <h3>2.00</h3>
+                                <p>per month</p>
+                                <button>Select Premium</button>
+                            </div>
+                            <div class="third-tab-title">
+                                <h3>1.00</h3>
+                                <p>per month</p>
+                                <button>Select Premium</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!--FAQ-->
+        <section>
+            <div class="faq-section">
+                <div class="faq-text-title">
+                    <h2>Have a question?</h2>
+                    <p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq active">
+                        <h3 class="faq-title">
+                            Why shouldn't we trust atoms?
+                        </h3>
+                        <p class="faq-text">
+                            They make up everything
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="bi bi-chevron-down"></i>
+                            <i class="bi bi-x"></i>
+                        </button>
+                    </div>
+            
+                    <div class="faq">
+                        <h3 class="faq-title">
+                        What do you call someone with no body and no nose?
+                        </h3>
+                        <p class="faq-text">
+                        Nobody knows.
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="bi bi-chevron-down"></i>
+                            <i class="bi bi-x"></i>
+                        </button>
+                    </div>
+            
+                    <div class="faq">
+                        <h3 class="faq-title">
+                        What's the object-oriented way to become wealthy?
+                        </h3>
+                        <p class="faq-text">
+                        Inheritance.
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="bi bi-chevron-down"></i>
+                            <i class="bi bi-x"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="faq">
+                        <h3 class="faq-title">
+                        How many tickles does it take to tickle an octopus?
+                        </h3>
+                        <p class="faq-text">
+                        Ten-tickles!
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="bi bi-chevron-down"></i>
+                            <i class="bi bi-x"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="faq">
+                        <h3 class="faq-title">
+                        What is: 1 + 1?
+                        </h3>
+                        <p class="faq-text">
+                        Depends on who are you asking.
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="bi bi-chevron-down"></i>
+                            <i class="bi bi-x"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+            <script src="script.js"></script>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer_container">
+            <div class="section_footer">
+                <h2>START YOUR FREE TRIAL</h2>
+                <p>MagicAI has all the tools you need to create and manage your SaaS platform.</p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
