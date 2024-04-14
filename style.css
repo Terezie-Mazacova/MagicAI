@@ -585,27 +585,31 @@ main {
     border: 1px solid #E5E7EB;
     padding: 40px;
     border-radius: 40px;
-    margin-bottom: 80px
+    margin-bottom: 80px;
+    gap: 40px;
 }
 .magic-tools-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 24px;
 }
 .magic-tools-title h2 {
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
+    line-height: 52px;
 }
 .magic-tools-title p {
     max-width: 350px;
+    color: rgba(101, 111, 126, 1);
+    font-size: 18px;
+    line-height: 22px;
 }
 .magic-tools {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    margin-top: 30px;
     justify-content: center;
 }
 .magic-tools-list {
@@ -615,15 +619,26 @@ main {
     align-items: center;
     text-align: center;
 }
+.magic-tools-img {
+    width: 100%; 
+    height: 0; 
+    padding-top: 56.25%; 
+    position: relative;
+    overflow: hidden;
+}
 .magic-tools-img img {
-    max-width: 100%;
-    height: auto; /*180px puvodnich a bez max width*/
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    top: 0; 
+    left: 0;
     border-radius: 40px 40px 6px 6px;
 }
 .magic-tools-items {
     display: flex;
     flex-direction: column;
-    background-color: #e5e5e5;
+    background-color: rgba(243, 243, 245, 1);
     margin-top: -4px;
     padding: 0px 32px 48px 32px;
     border-radius: 0 0 40px 40px;
@@ -631,12 +646,15 @@ main {
     height: 100%;
 }
 .magic-tools-items h4 {
-    margin-top: 17px;
-    margin-bottom: 5px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    line-height: 24px;
+    font-weight: 600;
 }
 .magic-tools-items p {
     color: #656F7E;
     font-size: 14px;
+    line-height: 20px;
 }
 
 /*So, how does it work?*/
