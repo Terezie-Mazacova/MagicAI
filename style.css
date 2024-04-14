@@ -692,11 +692,12 @@ main {
     font-size: 18px;
     opacity: 0.6;
     max-width: 270px;
-    line-height: 1.3;
+    line-height: 22px;
 }
 .work-items-title {
     display: flex;
     padding: 12px;
+    margin-bottom: 40px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -743,22 +744,22 @@ main {
     flex-direction: column;
     align-items: center;
     border: 1px solid #E5E7EB;
-    padding: 40px;
+    padding: 40px 40px 96px 40px;
     border-radius: 40px;
     gap: 24px;
     margin-bottom: 80px;
     overflow: hidden;
 }
 .splide__arrow {
-    bottom: 17% !important;
+    bottom: 30% !important;
     top: auto !important;
 }
 .splide__arrow--next {
-    right: 19% !important;
+    right: 10% !important;
     background: none !important;
 }
 .splide__arrow--prev {
-    left: 19% !important;
+    left: 10% !important;
     background: none !important;
 }
 .splide__arrow svg {
@@ -770,7 +771,10 @@ main {
     margin-bottom: 30px;
 }
 .splide__pagination {
-    bottom: 30px !important;
+    bottom: 96px !important;
+}
+.splide__pagination__page.is-active {
+    background: rgba(28, 30, 40, 1) !important;
 }
 .splide-item {
 	display: flex;
@@ -791,6 +795,10 @@ main {
     justify-content: center;
     align-items: center;
 }
+.splide-caption p {
+    line-height: 33px;
+    font-size: 26px;
+}
 .splide-caption p,
 .splide-name {
 	width: 60%;
@@ -799,14 +807,16 @@ main {
     padding-right: 20px;
     padding-left: 20px;
 }
-.splide-name {
-	font-size: 25px;
-	font-weight: 400;
+.splide-name h3 {
+	font-size: 14px;
+	font-weight: 500;
 	text-transform: capitalize;
+    line-height: 20px;
 }
 .splide-job {
     margin-bottom: 15px;
     font-size: 14px;
+    color: rgba(101, 111, 126, 1);
 }
 
 /*Flexible */
@@ -890,6 +900,7 @@ main {
 }
 .third-tab-title h3 {
     font-size: 40px;
+    font-weight: 600;
 }
 .third-tab-title p {
     font-size: 14px;
