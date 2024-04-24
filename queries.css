@@ -71,6 +71,13 @@
         display: flex;
         flex-direction: column;
     }
+
+    /*Trusted by millions*/
+    .splide-caption p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
     /*Flexible Pricing*/
     .tab-title-items {
         display: flex;
@@ -101,13 +108,13 @@
     }
     /*Trusted by millions*/
     .splide__arrow {
-        bottom: 25% !important;
+        bottom: 30% !important;
     }
     .splide__arrow--next {
-        right: 5% !important;
+        right: 4% !important;
     }
     .splide__arrow--prev {
-        left: 5% !important;
+        left: 4% !important;
     }
     .splide-caption p,
     .splide-name {
@@ -216,10 +223,6 @@
     .section-tabs {
         overflow: hidden;
     }
-
-
-
-
 
     /*Flexible Pricing*/
     .section-third-tabs {
