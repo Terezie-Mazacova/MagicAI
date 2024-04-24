@@ -98,6 +98,10 @@
     }
 }
 @media only screen and (max-width: 500px) {
+    main {
+        margin: 0 20px;
+    }
+
     /*Custom Templates*/
     .post-card {
         flex-basis: calc(100% - 20px);
@@ -121,7 +125,9 @@
         width: 80%;
     }
 
-    
+    footer {
+        margin: 0 20px;
+    }
 }
 @media only screen and (min-width: 501px) and (max-width: 768px) {
     /*Custom Templates*/
@@ -132,6 +138,14 @@
     /*Magic Tools*/
     .magic-tools-list {
         flex-basis: calc(50% - 20px);
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 1023px) {
+    main {
+        margin: 0 40px;
+    }
+    footer {
+        margin: 0 40px;
     }
 }
 @media only screen and (max-width: 670px) {
@@ -209,15 +223,28 @@
     }
 }
 @media only screen and (min-width: 1024px) {
+    main {
+        margin: 0 80px;
+    }
+
     .hamburger {
         display: none;
     }
+
+    footer {
+        margin: 0 80px;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    main {
+        margin: 0 auto;
+    }
+
+    footer {
+        margin: 0 auto;
+    }
 }
 @media only screen and (max-width: 1475px) {
-    main {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 
     /*Intelligent Writing*/
     .section-tabs {

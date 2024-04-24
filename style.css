@@ -25,7 +25,7 @@ h4 {
     font-size: 18px;
 }
 main {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -1014,7 +1014,7 @@ main {
 
 /*Footer*/
 .footer_container {
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
