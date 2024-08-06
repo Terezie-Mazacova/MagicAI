@@ -1,4 +1,17 @@
-// JavaScript
+/*For Smooth Scroll*/
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+
+/* Hamburger Menu*/
 const hamburger = document.querySelector('.hamburger');
 
 hamburger.addEventListener('click', function() {
@@ -8,23 +21,14 @@ hamburger.addEventListener('click', function() {
 
     if (this.classList.contains('is-active')) {
         this.style.position = 'fixed';
-        this.style.top = '16px'; // Adjust as needed
-        this.style.right = '50px'; // Adjust as needed
+        this.style.top = '16px';
+        this.style.right = '50px';
     } else {
         this.style.position = 'initial';
         this.style.top = '80px';
         this.style.right = 'auto';
     }
 });
-
-	
-
-
-
-
-
-
-
 
 
 
