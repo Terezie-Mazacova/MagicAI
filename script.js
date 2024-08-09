@@ -56,66 +56,80 @@ jsTabs.forEach((jsTab) =>{
     });
 })
 
+
+
 /*Custom Templates - filtermenu*/
-const filterButtons = document.querySelectorAll('.filtermenu li')
-const filterItems = document.querySelectorAll('.post')
+const filterButtons = document.querySelectorAll('.filtermenu li');
+const filterItems = document.querySelectorAll('.post');
+const showMoreBtn = document.querySelector('#show-more');
+let currentItem = 6;
 
-
-filterButtons.forEach((button) =>{
-    button.addEventListener('click', () =>{
-        renderFilterItems(button.dataset.filter)
-    })
-})
-
-function renderFilterItems(query){
-    filterItems.forEach((item) =>{
-        if(query === 'all'){
-            item.classList.remove('hidden')
-        }
-        else {
-            if (item.classList.contains(query)){
-                item.classList.remove('hidden')
-            }
-            else {
-                item.classList.add('hidden')
-            }
-        }
-    })
-}
-
-
-/*Active li - Section Filtermenu*/
-var links = document.querySelectorAll('.filtermenu li');
-
-links.forEach(li => {
-    li.addEventListener('click',()=> {
+filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+        renderFilterItems(filter);
+        
         resetLinks();
-        li.classList.add('active');
-    })
-})
+        button.classList.add('active');
+    });
+});
 
-function resetLinks() {
-    links.forEach(li => {
-        li.classList.remove('active')
-    })
-}
+function renderFilterItems(query) {
+    currentItem = 6;
 
+    filterItems.forEach((item, index) => {
+        if (query === 'all') {
+            if (index < currentItem) {
+                item.classList.remove('hidden');
+            } else {
+                item.classList.add('hidden');
+            }
+        } else {
+            if (item.classList.contains(query)) {
+                item.classList.remove('hidden');
+            } else {
+                item.classList.add('hidden');
+            }
+        }
+    });
 
-/* Button Load More - Section Filtermenu*/
-let showMoreBtn = document.querySelector('#show-more');
-let hiddenPosts = document.querySelectorAll('.post.hidden');
-let currentItem = 3;
-
-showMoreBtn.onclick = () => {
-    for (let i = currentItem; i < currentItem + 3 && i < hiddenPosts.length; i++) {
-        hiddenPosts[i].classList.remove('hidden');
-    }
-    currentItem += 3;
-
-    if (currentItem >= hiddenPosts.length) {
+    if (query === 'all' && filterItems.length > currentItem) {
+        showMoreBtn.style.display = 'block';
+    } else {
         showMoreBtn.style.display = 'none';
     }
-};
+}
+
+
+function resetLinks() {
+    filterButtons.forEach(li => {
+        li.classList.remove('active');
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderFilterItems('all');
+    
+    document.querySelector('.filtermenu li[data-filter="all"]').classList.add('active');
+});
+
+/*Kliknutí na tlačítko "Show more"*/
+showMoreBtn.addEventListener('click', () => {
+    const hiddenItems = document.querySelectorAll('.post.hidden');
+
+    for (let i = 0; i < 6 && i < hiddenItems.length; i++) {
+        hiddenItems[i].classList.remove('hidden');
+    }
+
+    currentItem += 6;
+
+    if (hiddenItems.length <= 6) {
+        showMoreBtn.style.display = 'none';
+    }
+});
+
+
+
 
 
 /*Trusted by millions*/
