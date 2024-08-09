@@ -56,7 +56,7 @@ jsTabs.forEach((jsTab) =>{
     });
 })
 
-/*Custom Templates-filter and load more*/
+/*Custom Templates - filtermenu*/
 const filterButtons = document.querySelectorAll('.filtermenu li')
 const filterItems = document.querySelectorAll('.post')
 
@@ -84,6 +84,24 @@ function renderFilterItems(query){
 }
 
 
+/*Active li - Section Filtermenu*/
+var links = document.querySelectorAll('.filtermenu li');
+
+links.forEach(li => {
+    li.addEventListener('click',()=> {
+        resetLinks();
+        li.classList.add('active');
+    })
+})
+
+function resetLinks() {
+    links.forEach(li => {
+        li.classList.remove('active')
+    })
+}
+
+
+/* Button Load More - Section Filtermenu*/
 let showMoreBtn = document.querySelector('#show-more');
 let hiddenPosts = document.querySelectorAll('.post.hidden');
 let currentItem = 3;
@@ -98,6 +116,7 @@ showMoreBtn.onclick = () => {
         showMoreBtn.style.display = 'none';
     }
 };
+
 
 /*Trusted by millions*/
 document.addEventListener( 'DOMContentLoaded', function() {

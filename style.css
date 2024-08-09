@@ -510,8 +510,10 @@ main {
     padding: 6px 16px;
     white-space: nowrap;
     line-height: 20px;
+    transition: all 0.3s ease;
 }
-.filtermenu li:hover {
+.filtermenu li:hover,
+.filtermenu li.active {
     color: #1C1E28;
     padding: 6px 16px;
     border-radius: 8px;
